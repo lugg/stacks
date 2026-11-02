@@ -160,7 +160,7 @@ export const Box = React.forwardRef((props, ref) => {
         : 'content',
   );
 
-  styles.useVariants({
+  const variantStyles = styles.useVariants({
     justifyContent,
     alignItems,
     flexBasis,
@@ -176,7 +176,7 @@ export const Box = React.forwardRef((props, ref) => {
       {...rest}
       ref={ref}
       style={[
-        styles.root,
+        variantStyles.root,
         {
           gap: multiply(resolveResponsiveProp(gap)),
           rowGap: multiply(resolveResponsiveProp(rowGap)),
