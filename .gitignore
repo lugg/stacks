@@ -20,4 +20,4 @@
 dist/
 node_modules/
 .mind/
-lib/
+# lib/ is committed so the package installs from git without a build
